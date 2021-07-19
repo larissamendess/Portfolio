@@ -50,6 +50,14 @@ button {
   font-size: 18px;
 }
 
+.title-purple{
+  color: var(--purple)
+}
+
+.title-green{
+  color: var(--green)
+}
+
 header{
   height: calc(100vh - 65px);
   display: flex;
@@ -67,9 +75,6 @@ header .container img{
   display: none;
 }
 
-header .container h1{
-  color: var(--green);
-}
 header .container button{
   margin-top:  40px;
 }
@@ -108,8 +113,30 @@ nav ul a svg {
 
 section {
   height: 1500px;
-  background: darkorange;
 }
+
+.about-me{
+  display: flex;
+  padding: 100px;
+
+}
+
+.about-me .container{
+  width: 50%;
+  padding-right: 50px;
+}
+
+.about-me .img-container{
+  width: 50%;
+  text-align: center;
+}
+
+.about-me .img-container img{
+  width: 50%;
+}
+
+
+
 
 /* RESPONSIVIDADE */
 /* desktops menores */
