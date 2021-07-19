@@ -129,13 +129,14 @@ section {
 .about-me .img-container{
   width: 50%;
   text-align: center;
+
 }
 
 .about-me .img-container img{
   width: 50%;
+  height: auto;
+  
 }
-
-
 
 
 /* RESPONSIVIDADE */
