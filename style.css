@@ -154,6 +154,22 @@ section {
   nav{
     padding: 0 30px;
   }
+
+  .about-me{
+    flex-direction: column;
+  }
+
+  .about-me .container, .about-me .img-container {
+    width: 100%;
+  }
+
+  .about-me .container{
+    padding-right: 0;
+  }
+
+  .about-me .img-container{
+    margin: 70px 0;
+  }
 }
 
 /* TABLET*/
@@ -201,6 +217,9 @@ section {
   nav ul a svg{
     display: block;
     margin: 0 auto 10px;
+  }
+  .about-me {
+    padding: 40px;
   }
   
 }
