@@ -111,9 +111,6 @@ nav ul a svg {
   display: none;
 }
 
-section {
-  height: 1500px;
-}
 
 .about-me{
   display: flex;
@@ -137,6 +134,45 @@ section {
   height: auto;
   
 }
+
+.services{
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
+}
+
+.services-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin:60px auto 0;
+}
+
+.services .services-container .services-card{
+max-width: 360px;
+background: #2F3034;
+border: 1px solid var(--purple);
+border-radius: 16px;
+padding: 40px 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+
+}
+
+.services .services-container .services-card img {
+  margin-bottom: 40px;
+  width: 90px;
+}
+
+.services-card + .services-card{ 
+   margin-left: 10px;
+}
+
+
+
 
 
 /* RESPONSIVIDADE */
@@ -170,6 +206,26 @@ section {
   .about-me .img-container{
     margin: 70px 0;
   }
+  .services{
+    padding: 0;
+  }
+
+  .services .services-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-card{
+    height: 394px;
+  }
+  .services-card + .services-card{ 
+    margin-left: 0;
+    margin-top: 30px;
+ }
+ 
+
+
 }
 
 /* TABLET*/
@@ -221,6 +277,12 @@ section {
   .about-me {
     padding: 40px;
   }
-  
+
+  .services{
+    margin: 70px 0;
+  }
+  .services .services-container{
+    padding: 0 20px;
+  }
 }
 
