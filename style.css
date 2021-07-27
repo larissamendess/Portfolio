@@ -5,13 +5,17 @@
   --green: #15CDCB;
   --bg-dark: #212226;
   --ligth-grey: #E8DEDE;
-
+  --medium-greey: #2F3034
   --menu-heigth: 75px;
 
 }
 
 *{
   box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -45,6 +49,24 @@ button {
   font-weight: bold;
   color: white;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.secondary-button{
+ background: var(--medium-greey);
+ border: 1px solid var(--purple);
+ color: var(--green);
+ font-weight: bold;
+ height: 80px;
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+
+ 
+}
+
+.secondary-button img{
+  margin-right: 15px;
 }
 
 .title-purple{
@@ -178,10 +200,8 @@ text-align: center;
   
 }
 
-
 .portfolio .portfolio-container {
   margin-top: 130px;
-
 }
 
 .portfolio .portfolio-container .portfolio-card{
@@ -234,7 +254,68 @@ p {
   margin: 0;
 }
 
+.curriculum{
+  padding: 0 100px;
+  text-align: center;
+}
 
+.curriculum .container{
+  display: flex;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.curriculum .container .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+
+}
+
+.curriculum .container .content .curriculum-info{
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 1rem;
+  margin-bottom: 50px;
+  
+}
+
+
+.contact{
+  max-width: 700px;
+  margin: 100px auto 60px;
+  text-align: center;
+  padding: 0 20px;
+
+}
+
+.contact h1{
+  width: fit-content;
+  margin: 0 auto 40px;
+  background: -webkit-linear-gradient(rgba(21, 205, 203, 1), rgba(82, 128, 226, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact button{
+  margin: 40px auto;
+}
+
+.contact .social-media{
+  max-width: 360px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+footer{
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 
 /* RESPONSIVIDADE */
@@ -289,11 +370,20 @@ p {
     margin-top: 30px;
  }
  
-
  .portfolio{
    height: 100%;
  }
 
+ .curriculum .container{
+   flex-wrap: wrap;
+ }
+
+ .curriculum .container .curriculum-img{
+   display: block;
+   margin: 0 auto 50px;
+   width: 100%;
+   max-width: 520px;
+ }
 }
 
 /* TABLET*/
@@ -361,6 +451,13 @@ p {
   }
   .portfolio{
     margin: 100px 0 50px;
+  }
+  .curriculum{
+    padding: 0 20px;
+  }
+
+  .curriculum .container .content .curriculum-info{
+    padding: 0 15px;
   }
 }
 

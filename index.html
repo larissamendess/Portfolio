@@ -22,14 +22,14 @@
     <nav>
       <img src="assets/Frame 1.png" alt="logo">
          <ul>
-           <a href=""><i data-feather="user"></i>Sobre mim</a>
-           <a href=""><i data-feather="briefcase"></i>Serviços</a>
-           <a href=""><i data-feather="image"></i>Portfólio</a>
-           <a href=""><i data-feather="list"></i>Curriculo</a>
-           <a href=""><i data-feather="send"></i>Contato</a>
+           <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
+           <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+           <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+           <a href="#curriculum"><i data-feather="list"></i>Curriculo</a>
+           <a href="#contact"><i data-feather="send"></i>Contato</a>
          </ul>
     </nav>
-  <section class="about-me">
+  <section id="aboutme" class="about-me">
            <div class="container">
           <h1 class="title-green">Sobre Mim</h1>
           <p>Mineira de 22 anos, atualmente estudando Análise e Desenvolvimento de Sistemas.
@@ -42,7 +42,7 @@
             <img src="assets/foto-perfil.jpg" alt="foto de perfil">
           </div>
   </section>
-  <section class="services">
+  <section id="services" class="services">
           <h1 class="title-purple">Serviços</h1>
           <div class="services-container">
               <div class="services-card">
@@ -62,7 +62,7 @@
               </div>
           </div>
   </section>
-   <section class="portfolio">
+   <section id="portfolio" class="portfolio">
       <h1 class="title-green">Portfólio</h1>
       <div class="portfolio-container">
         <div class="portfolio-card">
@@ -113,6 +113,39 @@
         </div>
       </div>
    </section>
+    <section id="curriculum" class="curriculum">
+      <h1 class="title-green">Curriculo</h1>
+      <div class="container">
+        <img class="curriculum-img" src="assets/imagem (2).png" alt="curriculo">
+        <div class="content">
+           <div class="curriculum-info">
+              <span>Nome</span><b>Larissa Mendes</b>
+              <span>Idade</span><b>22 anos</b>
+              <span>Cursando</span><b>Análise e Desenvolvimento de Sistemas / Estácio</b>
+              <span>Cidade</span><b>Contagem/MG</b>
+              <span>Telefone</span><b>31 99336-1813</b>
+              <span>E-mail</span><b>larissa.smendes8@gmali.com</b>
+              <span>Conhecimento</span><b>Html, Css, Js, Vue.js</b>
+           </div>
+           <button class="secondary-button">
+             <a href="https://drive.google.com/file/d/18DuCi_2pvp1h7mvliBplTg5d-S8HV47F/view?usp=sharing"><img src="assets/Union.png" alt="simbolo curriculo">Baixe meu curriculo completo</button></a>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact" class="contact">
+     <h1>Vamos trabalhar juntos?</h1>
+     <p>Se você gostou do meu trabalho e quer que eu faça parte do seu time, entre em contato comigo!</p>
+     <button onclick="window.open('https://api.whatsapp.com/send?phone=5531993361813')">Entre em contato</button>
+     <div class="social-media">
+       <a href="https://www.linkedin.com/in/larissa-santos-70248a213/"><img src="assets/linkedin (1).png" alt="linkedin"></a>
+       <a><img src="assets/vector.png" alt="instagram"></a>
+       <a href="https://api.whatsapp.com/send?phone=5531993361813"><img src="assets/whatsapp.png" alt="whatsapp"></a>
+       <a><img src="assets/youtube.png" alt="youtube"></a>
+     </div>
+    </section>
+    <footer> <p>Made by Larissa Mendes - 2021</p></footer>
+
   <script>
     feather.replace()
   </script>
